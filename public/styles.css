@@ -1,0 +1,102 @@
+/* Estilização Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para o Corpo da Página */
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+/* Estilos para o Título */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    
+    text-align: center;
+}
+
+/* Container da Pesquisa */
+.container {
+    background-color: #2a2a2a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e63900;
+}
+
+/* Resultados */
+.results-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos das Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    margin: 10px;
+}
+
+#results {
+    display: grid; /* Configura o container para usar grid */
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas de tamanhos iguais */
+    gap: 15px; /* Espaçamento entre as imagens */
+    margin-top: 20px; /* Espaço entre o campo de pesquisa e os resultados */
+}
+
+#results img {
+    width: 100%; /* Faz as imagens ocuparem toda a largura das células */
+    height: auto; /* Mantém a proporção das imagens */
+    border: 2px solid #fff; /* Borda branca ao redor da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Sombra sutil */
+}
