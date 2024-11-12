@@ -6,7 +6,7 @@ document.getElementById('search-button').addEventListener('click', async () => {
         const response = await fetch(`/api/nasa/search?q=${encodeURIComponent(query)}&limit=${limit}`);
         const results = await response.json();
 
-        // Verifique se `results` é um array antes de tentar processá-lo
+    
         if (Array.isArray(results)) {
             displayResults(results);
         } else {
@@ -30,3 +30,18 @@ function displayResults(results) {
         resultsContainer.appendChild(img);
     });
 }
+
+// videos
+
+document.getElementById('videos-btn').addEventListener('click', () => {
+    const query = document.getElementById('search-input').value;
+    window.location.href = `/videos.html?query=${encodeURIComponent(query)}`;
+});
+
+
+//artigos
+
+document.getElementById('articles-btn').addEventListener('click', () => {
+    const query = document.getElementById('search-input').value;
+    window.location.href = `/artigos.html?query=${encodeURIComponent(query)}`;
+});

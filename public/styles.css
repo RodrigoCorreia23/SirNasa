@@ -87,16 +87,63 @@ img {
 }
 
 #results {
-    display: grid; /* Configura o container para usar grid */
+    display: grid; 
     grid-template-columns: repeat(2, 1fr); /* Define duas colunas de tamanhos iguais */
     gap: 15px; /* Espaçamento entre as imagens */
     margin-top: 20px; /* Espaço entre o campo de pesquisa e os resultados */
 }
 
 #results img {
-    width: 100%; /* Faz as imagens ocuparem toda a largura das células */
-    height: auto; /* Mantém a proporção das imagens */
+    width: 100%; 
+    height: auto; 
     border: 2px solid #fff; /* Borda branca ao redor da imagem */
     border-radius: 8px; /* Bordas arredondadas */
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Sombra sutil */
 }
+
+#articles-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#articles-button:hover {
+    background-color: #45a049;
+}
+
+
+
+/*artigos*/
+
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.article {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.article h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+
+
