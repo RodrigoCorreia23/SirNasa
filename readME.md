@@ -61,7 +61,7 @@ The application also offers a user-friendly and interactive interface, with dedi
 ### **Execution**
 1. Start the server with the command:
    ```bash
-   node server.js
+   npm start
    ```
 2. Open the application in your browser at:
    ```
