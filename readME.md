@@ -40,12 +40,18 @@ The application also offers a user-friendly and interactive interface, with dedi
 - Clone the repository or copy the project files to your local system.
 
 ### **Installation**
-1. Install project dependencies by running:
+
+1. Clone the project
+   ```bash
+   https://github.com/RodrigoCorreia23/SirNasa
+   ```
+
+2. Install project dependencies by running:
    ```bash
    npm install
    ```
 
-2. Create a `.env` file in the project root and add the following environment variables with your respective API keys:
+3. Create a `.env` file in the project root and add the following environment variables with your respective API keys:
    ```
    NASA_API_KEY=<your-nasa-api-key>
    YOUTUBE_API_KEY=<your-youtube-api-key>
@@ -125,6 +131,6 @@ The application also offers a user-friendly and interactive interface, with dedi
 ---
 ## authors
 
-- Rodrigo Correia
-- Ana Silva
+- Rodrigo Correia - 28968
+- Ana Silva - 29035
 ---
